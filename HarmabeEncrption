@@ -1,0 +1,60 @@
+</html>
+
+<form>
+   Please enter your Password you want to encrypt
+   <br>
+  <input type="text" value ="" id="password"><br>
+
+  <select id="SelectEn">
+	<option value="harambeMeme">Harambe Meme Encryption </option>
+	<option value="hash">2</option>
+	<option value="base64">3</option>
+	<option value="binary">4</option>
+  </select>
+	
+	<br>
+ <input type="submit" value="Submit" onclick="Submit()">
+ </form>
+	
+	
+	<script>
+		function Submit(){
+			var HarambeResult ="";
+			var inputString = document.getElementById('password');
+			var inputSelect = document.getElementById('SelectEn');
+			alert(inputString.value);
+			<!--alert(inputSelect.value);  -->
+				<!--var alphabet ='abcdefghijklmnopqrstuvwxyz'; -->
+			var HarambeEncrpt = 'demo0utf0rhar[b]DEMOSOUTFORHAR(B)';
+			
+			var crpypt = "";
+			for(var i=0;i<=inputString.value.length-1;i++){
+				<!--alert(i);-->
+				<!-- -a -->
+				var getIndex;
+    			getIndex = inputString.value.charCodeAt(i) - 97;
+				<!--crpypt = crpypt + getIndex;-->
+                <!--alert(getIndex);-->
+				HarambeResult = HarambeEncrpt.charAt(getIndex) + HarambeResult;	
+				 <!--alert(HarambeResult);-->
+			}
+			alert(HarambeResult);
+		}
+		
+	</script>
+	
+	
+	
+	
+	
+	<!--
+	onclick="HarambeEncrppt()" 
+  demos 0ut f0r har[b]
+  
+  DEMOS OUT FOR HAR(B)
+  
+  -->
+  
+</form>
+
+</html>
